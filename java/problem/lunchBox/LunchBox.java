@@ -4,15 +4,19 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
  
+/**
+ * Created by Junwoo on 2016-08-15.
+ */ 
+ 
 public class LunchBox{
     public static void main(String arg[]) throws IOException{
     	
     	int c;
     	int n;	
-    	int cookEat[][]; //2Â÷¿ø¹è¿­ Á¶¸®,¸Ô´Â½Ã°£ 
-    	int totalCook = 0; //°íÁ¤½Ã°£ (ÃÑ ¿ä¸®½Ã°£)
+    	int cookEat[][]; //2ì°¨ì›ë°°ì—´ ì¡°ë¦¬,ë¨¹ëŠ”ì‹œê°„ 
+    	int totalCook = 0; //ê³ ì •ì‹œê°„ (ì´ ìš”ë¦¬ì‹œê°„)
     	int max = -2147483648; //eating max time
-    	int current = 0; //ÇöÀç±îÁö ¸ÔÀº ½Ã°£
+    	int current = 0; //í˜„ì¬ê¹Œì§€ ë¨¹ì€ ì‹œê°„
     	int temp = 0;
     	int i=0;
     	
@@ -53,7 +57,7 @@ public class LunchBox{
 	    	}
 	    	sb.append(totalCook+max+"\n");
 	    	
-	    	//ÃÊ±âÈ­
+	    	//ì´ˆê¸°í™”
 	    	current=0;
 	    	max = -2147483648;
 	    	i = 0;
