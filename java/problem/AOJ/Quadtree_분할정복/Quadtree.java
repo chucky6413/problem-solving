@@ -1,7 +1,3 @@
-/*
- * 출처 : http://timpani.tistory.com/entry/%EC%BF%BC%EB%93%9C-%ED%8A%B8%EB%A6%AC-%EB%92%A4%EC%A7%91%EA%B8%B0-QUADTREE
- * 잘 보고 배웁니다.
- */
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
