@@ -28,8 +28,7 @@ public class Lis {
 			}
 			for(int i=0;i<size;i++){
 				int value = lis(i);
-				if(value>result[c])
-					result[c] = value;
+				result[c]=Math.max(value, result[c]);
 			}
 		}
 		for(int print:result){
@@ -46,8 +45,7 @@ public class Lis {
 		for(int i=index;i<arr.length;i++){
 			if(arr[i]>arr[index]){
 				temp=lis(i)+1;
-				if(temp>maxValue)
-					maxValue=temp;
+				maxValue = Math.max(temp,maxValue);
 			}
 		}
 		

@@ -1,9 +1,0 @@
-http://egloos.zum.com/musicdiary/v/4207458
-
-//collection sort
-
-http://iloveulhj.github.io/posts/java/java-collection-sort.html
-
-//Math.atan 등 .. 설명 잘되어있음..
-
-https://msdn.microsoft.com/ko-kr/library/system.math.atan(v=vs.110).aspx
