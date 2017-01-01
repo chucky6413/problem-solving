@@ -20,6 +20,7 @@ public class Main {
 		
 		if(password.charAt(0)=='0'){
 			//0으로 시작하면 X
+			result[1] = 0;
 		}else{
 			for(int i=2;i<len+1;i++){
 				if(!(password.charAt(i-2)=='1' || password.charAt(i-2)=='2') && password.charAt(i-1)=='0'){ //예외상황
