@@ -1,7 +1,9 @@
 /*
  * 2016.12.29
  * 이분 그래프
- * 백준 1707
+ *
+ * @problem https://www.acmicpc.net/problem/1707
+ * @author chucky3
  */
 import java.util.*;
 

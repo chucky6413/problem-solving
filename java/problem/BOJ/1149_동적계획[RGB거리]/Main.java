@@ -1,7 +1,10 @@
 /*
  * 2016.12.12
  * 동적 계획법
- * 백준 1149
+ *
+ * @problem https://www.acmicpc.net/problem/1149
+ * @author chucky3
+ *
  * cost[n][m]=min(cost[n-1][(j+1)%3],cost[n-1][(j+2)%3])+arr[m] ..
  */
 import java.io.BufferedReader;

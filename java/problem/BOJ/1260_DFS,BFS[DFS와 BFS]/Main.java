@@ -1,7 +1,9 @@
 /*
  * 2016.12.28
  * DFS,BFS
- * น้มุ 1260
+ *
+ * @problem https://www.acmicpc.net/problem/1260
+ * @author chucky3
  */
 import java.util.*;
 

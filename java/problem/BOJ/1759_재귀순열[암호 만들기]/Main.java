@@ -1,7 +1,9 @@
 /*
  * 2016.11.7
  * 재귀 순열
- * 백준 1759
+ * 
+ * @problem https://www.acmicpc.net/problem/1759
+ * @author chucky3
  */
 
 import java.io.*;

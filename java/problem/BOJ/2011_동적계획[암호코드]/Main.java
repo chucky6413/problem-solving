@@ -1,7 +1,9 @@
 /*
  * 2016.11.14
  * 다이나믹프로그래밍.
- * 백준 2011
+ *
+ * @problem https://www.acmicpc.net/problem/2011
+ * @author chucky3
  */
 import java.util.Scanner;
 

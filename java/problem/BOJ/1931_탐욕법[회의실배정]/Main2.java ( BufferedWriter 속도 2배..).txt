@@ -1,7 +1,9 @@
 /*
  * 2016.12.04
  * ลฝฟๅนý
- * น้มุ 1931
+ * 
+ * @problem https://www.acmicpc.net/problem/1931
+ * @author chucky3
  */
 import java.util.PriorityQueue;
 import java.io.*;

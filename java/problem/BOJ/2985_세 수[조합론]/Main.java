@@ -1,7 +1,9 @@
 /*
  * 2017.01.10
  * 조합론
- * 백준 2985
+ *
+ * @problem https://www.acmicpc.net/problem/2985
+ * @author chucky3
  */
 import java.util.Scanner;
 

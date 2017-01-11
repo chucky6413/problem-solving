@@ -1,7 +1,10 @@
 /*
  * 2016.8.28
- * boj 1922
  * 네트워크 연결
+ *
+ * @problem https://www.acmicpc.net/problem/1922
+ * @author chucky3
+ *
  * disjointSet 자료구조를 이용하여 kruskal 알고리즘을 사용하여 해결.
  * 레드블랙 트리인 TreeMap -> 중복 key의 경우 value 안의 object에 line 을 연결하는 식으로 
  * MultiMap 처럼 사용

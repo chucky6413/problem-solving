@@ -1,7 +1,10 @@
 /*
  * 2016.12.12
  * 동적 계획법
- * 백준 2193
+ *
+ * @problem https://www.acmicpc.net/problem/2193
+ * @author chucky3
+ *
  * f(n)=f(n-1)+f(n-2)..
  */
 import java.util.Scanner;

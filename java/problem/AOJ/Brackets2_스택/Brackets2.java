@@ -2,6 +2,8 @@
  * 2016.11.05
  * 짝이 맞지 않은 괄호 문제..
  * LinkedList 를 이용한 Stack 으로 간단하게 해결..
+ *
+ * @author chucky3
  */
 
 import java.io.*;

@@ -1,7 +1,9 @@
 /*
  * 2016.11.26
  * 다익스트라 알고리즘(우선순위 큐) nlogn
- * 백준 1753
+ * 
+ * @problem https://www.acmicpc.net/problem/1753
+ * @author chucky3
  */
 import java.util.Scanner;
 import java.util.PriorityQueue;

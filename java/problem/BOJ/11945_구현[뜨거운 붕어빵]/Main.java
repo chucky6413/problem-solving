@@ -1,7 +1,9 @@
 /*
  * 2017.01.10
  * 구현
- * 백준 11945
+ * 
+ * @problem https://www.acmicpc.net/problem/11945
+ * @author chucky3
  */
 import java.util.Scanner;
 

@@ -1,7 +1,9 @@
 /*
  * 2016.12.11
  * ลฝฟๅนý
- * น้มุ 1969
+ * 
+ * @problem https://www.acmicpc.net/problem/1969
+ * @author chucky3
  */
 import java.util.Scanner;
 

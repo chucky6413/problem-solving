@@ -1,7 +1,9 @@
 /*
  * 2017.01.10
  * 구현
- * 백준 9324
+ *
+ * @problem https://www.acmicpc.net/problem/9324
+ * @author chucky3
  */
 import java.util.Scanner;
 import java.util.Arrays;

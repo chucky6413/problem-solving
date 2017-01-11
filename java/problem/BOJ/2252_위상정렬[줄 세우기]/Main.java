@@ -1,3 +1,11 @@
+/*
+ * 2016.08.20
+ * 위상정렬
+ *
+ * @problem https://www.acmicpc.net/problem/2252
+ * @author chucky3
+ */
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ArrayList;

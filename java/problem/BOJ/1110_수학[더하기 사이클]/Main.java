@@ -1,7 +1,9 @@
 /*
  * 2016.11.26
  * 수학.
- * 백준 1110
+ *
+ * @problem https://www.acmicpc.net/problem/1110
+ * @author chucky3
  */
 
 import java.util.Scanner;

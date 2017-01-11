@@ -1,7 +1,9 @@
 /*
  * 2017.01.01
  * 동적계획
- * 백준 2579
+ *
+ * @problem https://www.acmicpc.net/problem/2579
+ * @author chucky3
  */
 import java.util.*;
 

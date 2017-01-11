@@ -1,7 +1,9 @@
 /*
  * 2017.01.01
  * DFS
- * น้มุ 1325
+ *
+ * @problem https://www.acmicpc.net/problem/1325
+ * @author chucky3
  */
 import java.util.*;
 

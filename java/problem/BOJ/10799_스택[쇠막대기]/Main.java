@@ -1,6 +1,8 @@
 /*
  * 2016.12.04
- * น้มุ 10799
+ *
+ * @problem https://www.acmicpc.net/problem/10799
+ * @author chucky3
  */
 import java.util.Scanner;
 

@@ -1,7 +1,10 @@
 /*
  * 2017.01.10
  * 동적 계획,수학,문자열 처리
- * 백준 1464
+ *
+ * @problem https://www.acmicpc.net/problem/1464
+ * @author chucky3
+ *
  * ABDAA
  * BCDAF
  * EBA

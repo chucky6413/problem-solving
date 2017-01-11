@@ -1,6 +1,9 @@
 /*
  * 2016.11.5
  * 스택 수열.
+ *
+ * @problem https://www.acmicpc.net/problem/1874
+ * @author chucky3
  */
 import java.util.Scanner;
 import java.util.Stack;
