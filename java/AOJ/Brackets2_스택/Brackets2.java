@@ -3,6 +3,7 @@
  * 짝이 맞지 않은 괄호 문제..
  * LinkedList 를 이용한 Stack 으로 간단하게 해결..
  *
+ * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/AOJ
  * @author chucky3
  */
 

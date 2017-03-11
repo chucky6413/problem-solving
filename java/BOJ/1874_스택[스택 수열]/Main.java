@@ -3,6 +3,7 @@
  * 스택 수열.
  *
  * @problem https://www.acmicpc.net/problem/1874
+ * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
  * @author chucky3
  */
 import java.util.Scanner;

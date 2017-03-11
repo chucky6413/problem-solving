@@ -3,6 +3,7 @@
  * 조세푸스 문제.. 원형 연결리스트를 흉내낸 연산으로..
  * 해결 매우 간단.
  *
+ * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/AOJ
  * @author chucky3
  */
 

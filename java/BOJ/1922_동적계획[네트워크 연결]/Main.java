@@ -3,6 +3,7 @@
  * 네트워크 연결
  *
  * @problem https://www.acmicpc.net/problem/1922
+ * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
  * @author chucky3
  *
  * disjointSet 자료구조를 이용하여 kruskal 알고리즘을 사용하여 해결.

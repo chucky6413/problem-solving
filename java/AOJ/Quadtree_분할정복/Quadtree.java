@@ -1,4 +1,5 @@
 /*
+ * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/AOJ
  * @author chucky3
  */
 import java.io.BufferedReader;

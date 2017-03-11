@@ -3,6 +3,7 @@
  * Å½¿å¹ý
  *
  * @problem https://www.acmicpc.net/problem/1931
+ * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
  * @author chucky3
  */
 import java.util.PriorityQueue;

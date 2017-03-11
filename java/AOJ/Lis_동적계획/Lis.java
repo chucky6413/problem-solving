@@ -4,6 +4,7 @@
  * 계속 오답 처리가 됬다..
  * 이유 : algospot 은 입력 중간에 답을 출력하면 틀림.. 마지막에 한번에 답을 출력해줘야 success..
  *
+ * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/AOJ
  * @author chucky3
  */
 import java.io.*;
