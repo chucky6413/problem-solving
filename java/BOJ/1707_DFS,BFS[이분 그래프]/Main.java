@@ -3,7 +3,7 @@
  * 이분 그래프
  *
  * @problem https://www.acmicpc.net/problem/1707
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 import java.util.*;

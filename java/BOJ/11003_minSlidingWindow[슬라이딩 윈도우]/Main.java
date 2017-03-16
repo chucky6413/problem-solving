@@ -3,7 +3,7 @@
  * 최소값 찾기,최소 슬라이딩 윈도우 알고리즘
  *
  * @problem https://www.acmicpc.net/problem/11003
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  *
  * deque(덱) 자료구조를 사용하여 숫자 저장한 array의 index를 관리하고

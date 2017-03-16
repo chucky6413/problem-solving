@@ -1,5 +1,5 @@
 /*
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/AOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  * 
  * 코드가 깔끔하지는 않지만..

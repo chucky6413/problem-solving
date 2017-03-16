@@ -3,7 +3,7 @@
  * 위상정렬
  *
  * @problem https://www.acmicpc.net/problem/2252
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 

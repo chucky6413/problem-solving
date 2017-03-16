@@ -3,7 +3,7 @@
  * 다이나믹프로그래밍.
  *
  * @problem https://www.acmicpc.net/problem/2011
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 import java.util.Scanner;

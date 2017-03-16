@@ -2,7 +2,7 @@
  * 2016.12.04
  *
  * @problem https://www.acmicpc.net/problem/10799
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 import java.util.Scanner;

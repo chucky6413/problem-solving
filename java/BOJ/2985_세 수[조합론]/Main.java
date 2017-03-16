@@ -3,7 +3,7 @@
  * Á¶ÇÕ·Ð
  *
  * @problem https://www.acmicpc.net/problem/2985
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 import java.util.Scanner;

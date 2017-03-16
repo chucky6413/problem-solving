@@ -4,7 +4,7 @@
  *
  * dp[i-1] 1X2로 채우는 수 + dp[i-2] 2X1로 채우는 수
  * @problem https://www.acmicpc.net/problem/11726
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 import java.util.*;

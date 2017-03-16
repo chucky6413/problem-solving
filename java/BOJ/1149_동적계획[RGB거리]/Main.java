@@ -3,7 +3,7 @@
  * 동적 계획법
  *
  * @problem https://www.acmicpc.net/problem/1149
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  *
  * cost[n][m]=min(cost[n-1][(j+1)%3],cost[n-1][(j+2)%3])+arr[m] ..

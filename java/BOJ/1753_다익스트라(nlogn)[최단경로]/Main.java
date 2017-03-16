@@ -3,7 +3,7 @@
  * 다익스트라 알고리즘(우선순위 큐) nlogn
  * 
  * @problem https://www.acmicpc.net/problem/1753
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 import java.util.Scanner;

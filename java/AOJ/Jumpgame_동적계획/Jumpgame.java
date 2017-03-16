@@ -7,7 +7,7 @@
  * int 형으로 하여 방문되지 않은 경우, false 인 경우, true 인 경우 3가지로 나눠서
  * 처리 할때가 속도가 더 빨랐고 문제를 해결 할 수 있었음.
  *
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/AOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 

@@ -3,7 +3,7 @@
  * 다익스트라 알고리즘
  *
  * @problem https://www.acmicpc.net/problem/1238
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  */
 import java.io.*;

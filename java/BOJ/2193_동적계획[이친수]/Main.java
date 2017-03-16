@@ -3,7 +3,7 @@
  * 동적 계획법
  *
  * @problem https://www.acmicpc.net/problem/2193
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  *
  * f(n)=f(n-1)+f(n-2)..

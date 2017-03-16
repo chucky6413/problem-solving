@@ -3,7 +3,7 @@
  * 동적 계획,수학,문자열 처리
  *
  * @problem https://www.acmicpc.net/problem/1464
- * @github https://github.com/chucky6413/Algorithm-study/tree/master/java/BOJ
+ * @github https://github.com/chucky6413
  * @author chucky3
  *
  * ABDAA
