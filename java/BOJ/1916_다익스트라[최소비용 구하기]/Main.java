@@ -23,11 +23,11 @@ public class Main {
 		city = new LinkedList[n+1]; //도시 배열 생성
 		totalCost = new int[n+1]; //총 비용 배열 생성
 		
-		for(int i=1;i<=n;i++){ //도시 배열의 LinkedList 생성
+		for(int i=1;i<=n;i++){ //도시 배열의 LinkedList 객체를 각각 생성
 			city[i] = new LinkedList<Node>();
 		}
 		
-		for(int i=1;i<=n;i++){ //총 비용 초기화
+		for(int i=1;i<=n;i++){ //총 비용 초기화 ( 무한대 = 최대 나올 수 있는 비용의 값 INF 를 대입 )
 			totalCost[i] = INF;
 		}
 		
@@ -75,5 +75,4 @@ class Node implements Comparable<Node>{
 	public int compareTo(Node n){
 		return cost<n.cost ? -1 : 1;
 	}
-	
 }
