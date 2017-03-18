@@ -9,7 +9,7 @@
 import java.util.*;
 
 public class Main {
-	static int lastP; //마지막 지워진 소수
+	static int currentPrime;
 	static int n,k,count,next,result;
 	static int arr[];
 	public static void main(String arg[]){
@@ -25,7 +25,7 @@ public class Main {
 		
 		while(count!=(n-1)){ //지운 수가 n-1개 일 때 까지 반복
 			primeSearch();
-			next = lastP;
+			next = currentPrime;
 			int multi = 2; //배수 곱할 것.
 			while(next<=n){
 				if(arr[next]!=0){ //지워지 않은 애들.
@@ -36,7 +36,7 @@ public class Main {
 					result = next;
 					break;
 				}
-				next = lastP * multi++; //배수 곱하기
+				next = currentPrime * multi++; //배수 곱하기
 			}
 			if(result!=0){ //반복문 끝.
 				break;
@@ -45,20 +45,21 @@ public class Main {
 		System.out.println(result);
 	}
 	public static void primeSearch(){
-		for(int i=lastP;i<=n;i++){
+		for(int i=currentPrime;i<=n;i++){
 			if(arr[i]!=0){ //지워지지 않았을 때만,
-				for(int j=i-1;j>=1;j--){
-					if(j==1){
-						lastP = i;
-						return;
-					}
-					if(i%j==0){ //소수 아니면 넘기기.
-						break;
-					}else{ // 계속.
-						continue;
-					}
+				if(isPrimeNumber(i)){
+					currentPrime = i;
+					break;
 				}
 			}
 		}
+	}
+	public static boolean isPrimeNumber(int num){
+		for(int i=2;i<num/2;i++){
+			if(num%i==0){
+				return false;
+			}
+		}
+		return true;
 	}
 }
