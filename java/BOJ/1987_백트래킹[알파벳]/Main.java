@@ -12,7 +12,6 @@ public class Main {
 	static int R,C,max=0,count=0;
 	static char arr[][];
 	static boolean check[] = new boolean[26];
-	static List<Integer> list = new LinkedList<Integer>();
 	public static void main(String arg[]){
 		Scanner input = new Scanner(System.in);
 		R = input.nextInt();
