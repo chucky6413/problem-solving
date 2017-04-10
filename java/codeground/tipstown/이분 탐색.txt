@@ -1,0 +1,35 @@
+class Solution
+{
+    public int solution(int n,int a,int b){
+		int answer = 0;
+		int k = 1,count=0;
+		
+		while(k<n){
+			k*=2;
+			count++; //ÃÖ°í ±íÀÌ È®ÀÎ
+		}
+		int T=count;
+		
+		while(T-->0){ //ÀÌºÐ Å½»ö
+			if(a<=n/2){
+				if(b>n/2){
+					break;
+				}else{
+					count--;
+					n/=2;
+				}
+			}else{
+				if(b<=n/2){
+					break;
+				}else{
+					count--;
+					n/=2;
+					a-=n;
+					b-=n;
+				}
+			}
+		}
+		answer = count;
+		return answer;
+	}
+}
