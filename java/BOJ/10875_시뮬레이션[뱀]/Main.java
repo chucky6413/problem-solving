@@ -120,7 +120,7 @@ class Rotate{ //회전 규칙
 }
 class Line{ //선분
 	int x1, y1, x2, y2; // (x1,y1) , (x2,y2) 두 점.
-	int dir; // 0 or 1  수평,수직
+	int dir; // 0 or 1  수직,수평
 	
 	public Line(int x1, int y1, int x2, int y2){
 		this.x1 = x1;
@@ -128,7 +128,7 @@ class Line{ //선분
 		this.x2 = x2;
 		this.y2 = y2;
 		
-		if(x1==x2){ //수평
+		if(x1==x2){ //수직
 			dir=0;
 		}else{
 			dir=1;
