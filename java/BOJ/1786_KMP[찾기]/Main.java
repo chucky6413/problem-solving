@@ -1,5 +1,5 @@
 /*
- * 2017.04.14
+ * 2017.04.19
  * KMP
  * 
  * @problem https://www.acmicpc.net/problem/1786
@@ -46,7 +46,7 @@ public class Main{
 				index = fail[index-1];
 			}
 			if(st[i]==st[index]){
-				fail[i] = fail[i-1]+1;
+				fail[i] = index+1;
 			}else{
 				fail[i] = 0;
 			}
