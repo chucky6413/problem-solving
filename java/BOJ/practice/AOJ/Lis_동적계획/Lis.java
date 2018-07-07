@@ -1,59 +1,61 @@
 /*
- * ÃÖ´ë Áõ°¡ ºÎºÐ ¼ö¿­
- * Àç±Í È£Ãâ·Î µ¿Àû ÇÁ·Î±×·¡¹Ö Àß Â®´Âµ¥..
- * °è¼Ó ¿À´ä Ã³¸®°¡ ‰ç´Ù..
- * ÀÌÀ¯ : algospot Àº ÀÔ·Â Áß°£¿¡ ´äÀ» Ãâ·ÂÇÏ¸é Æ²¸².. ¸¶Áö¸·¿¡ ÇÑ¹ø¿¡ ´äÀ» Ãâ·ÂÇØÁà¾ß success..
+ * ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ Â®ï¿½Âµï¿½..
+ * ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½..
+ * ï¿½ï¿½ï¿½ï¿½ : algospot ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ Æ²ï¿½ï¿½.. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ success..
  *
  * @github https://github.com/chucky6413
  * @author chucky3
  */
+
 import java.io.*;
 
 public class Lis {
-	
-	static int arr[];
-	static int max[];
-	static int size;
-	static int result[];
-	
-	public static void main(String arg[]) throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		int C = Integer.parseInt(br.readLine());
-		result = new int[C];
-		for(int c=0;c<C;c++){
-			size = Integer.parseInt(br.readLine());
-			arr = new int[size];
-			max = new int[size];
-			String[] temp = br.readLine().split(" ");
-			for(int i=0;i<size;i++){
-				arr[i] = Integer.parseInt(temp[i]);
-			}
-			for(int i=0;i<size;i++){
-				int value = lis(i);
-				result[c]=Math.max(value, result[c]);
-			}
-		}
-		for(int print:result){
-			System.out.println(print);
-		}
-	}
-	static int lis(int index){
-		if(max[index]>0)
-			return max[index];
-		
-		int maxValue = 1;
-		int temp = 0;
-		
-		for(int i=index;i<arr.length;i++){
-			if(arr[i]>arr[index]){
-				temp=lis(i)+1;
-				maxValue = Math.max(temp,maxValue);
-			}
-		}
-		
-		max[index] = maxValue;
-		
-		return max[index];
-	}
+
+    static int arr[];
+    static int max[];
+    static int size;
+    static int result[];
+
+    public static void main(String arg[]) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int C = Integer.parseInt(br.readLine());
+        result = new int[C];
+        for (int c = 0; c < C; c++) {
+            size = Integer.parseInt(br.readLine());
+            arr = new int[size];
+            max = new int[size];
+            String[] temp = br.readLine().split(" ");
+            for (int i = 0; i < size; i++) {
+                arr[i] = Integer.parseInt(temp[i]);
+            }
+            for (int i = 0; i < size; i++) {
+                int value = lis(i);
+                result[c] = Math.max(value, result[c]);
+            }
+        }
+        for (int print : result) {
+            System.out.println(print);
+        }
+    }
+
+    static int lis(int index) {
+        if (max[index] > 0)
+            return max[index];
+
+        int maxValue = 1;
+        int temp = 0;
+
+        for (int i = index; i < arr.length; i++) {
+            if (arr[i] > arr[index]) {
+                temp = lis(i) + 1;
+                maxValue = Math.max(temp, maxValue);
+            }
+        }
+
+        max[index] = maxValue;
+
+        return max[index];
+    }
 }
