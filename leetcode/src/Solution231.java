@@ -2,6 +2,7 @@
  * @problem https://leetcode.com/problems/power-of-two/description/
  * @author chucky6413
  */
+
 public class Solution231 {
     public boolean isPowerOfTwo(int n) {
         if (n == 0) {
