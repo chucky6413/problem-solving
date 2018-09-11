@@ -20,24 +20,24 @@ public class Solution15 {
         return result;
     }
 
-    public void findRestTwo(int[] nums, int start) {
-        int left = start + 1;
+    public void findRestTwo(int[] nums, int first) {
+        int left = first + 1;
         int right = nums.length - 1;
 
         while (left < right) {
 
-            if (nums[left] + nums[right] == -nums[start]) {
-                result.add(Arrays.asList(nums[start], nums[left++], nums[right--]));
+            if (nums[left] + nums[right] == -nums[first]) {
+                result.add(Arrays.asList(nums[first], nums[left++], nums[right--]));
 
                 while (left < nums.length - 1 && nums[left] == nums[left - 1]) {
                     left++;
                 }
 
-                while (right > start && nums[right] == nums[right + 1]) {
+                while (right > first && nums[right] == nums[right + 1]) {
                     right--;
                 }
 
-            } else if (nums[left] + nums[right] < -nums[start]) {
+            } else if (nums[left] + nums[right] < -nums[first]) {
                 left++;
             } else {
                 right--;
