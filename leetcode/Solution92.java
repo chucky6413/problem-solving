@@ -15,18 +15,18 @@ public class Solution92 {
     }
 
     private ListNode reverse(ListNode head, int count) {
-        ListNode newHead = new ListNode(head.val);
-        ListNode newTail = newHead;
+        ListNode start = new ListNode(head.val);
+        ListNode end = start;
 
         while (count > 0) {
             head = head.next;
             ListNode temp = new ListNode(head.val);
-            temp.next = newHead;
-            newHead = temp;
+            temp.next = start;
+            start = temp;
             count--;
         }
 
-        newTail.next = head.next;
-        return newHead;
+        end.next = head.next;
+        return start;
     }
 }
