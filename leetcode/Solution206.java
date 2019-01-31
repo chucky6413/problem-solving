@@ -9,17 +9,13 @@ public class Solution206 {
     }
 
     public ListNode reverseList(ListNode head) {
-        if (head == null || head.next == null) return head;
-        return recurSolve(head, null);
-    }
-
-    private ListNode recurSolve(ListNode cur, ListNode newHead) {
-        if (cur == null) {
-            return newHead;
+        ListNode tail = null;
+        while (head != null) {
+            ListNode next = head.next;
+            head.next = tail;
+            tail = head;
+            head = next;
         }
-
-        ListNode next = cur.next;
-        cur.next = newHead;
-        return recurSolve(next, cur);
+        return tail;
     }
 }
