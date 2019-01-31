@@ -1,15 +1,12 @@
 public class Solution141 {
     public boolean hasCycle(ListNode head) {
-        if (head == null) return false;
+        ListNode slow = head, fast = slow;
 
-        ListNode turtle = head;
-        ListNode rabbit = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
 
-        while (rabbit.next != null && rabbit.next.next != null) {
-            turtle = turtle.next;
-            rabbit = rabbit.next.next;
-
-            if (turtle == rabbit) {
+            if (slow == fast) {
                 return true;
             }
         }
@@ -27,4 +24,3 @@ public class Solution141 {
         }
     }
 }
-
