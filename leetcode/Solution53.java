@@ -1,13 +1,13 @@
 public class Solution53 {
     public int maxSubArray(int[] nums) {
-        int maxvalue = Integer.MIN_VALUE;
-        int curvalue = 0;
+        int max = Integer.MIN_VALUE;
+        int cur = 0;
 
         for (int i = 0; i < nums.length; i++) {
-            curvalue = curvalue > 0 ? curvalue + nums[i] : nums[i];
-            maxvalue = Math.max(curvalue, maxvalue);
+            cur = cur > 0 ? cur + nums[i] : nums[i];
+            max = Math.max(cur, max);
         }
 
-        return maxvalue;
+        return max;
     }
 }
