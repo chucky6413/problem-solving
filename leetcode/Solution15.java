@@ -6,42 +6,37 @@ import java.util.*;
  */
 
 public class Solution15 {
-    private List<List<Integer>> result = new ArrayList<List<Integer>>();
-
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
+        List<List<Integer>> rs = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (i == 0 || nums[i - 1] != nums[i]) {
+                int a = nums[i];
 
-        for (int i = 0; i < nums.length - 2; i++) {
-            if (i == 0 || nums[i] != nums[i - 1]) {
-                findRestTwo(nums, i);
+                // find two (b, c)
+                int left = i + 1;
+                int right = nums.length - 1;
+                while (left < right) {
+                    int b = nums[left];
+                    int c = nums[right];
+
+                    if (b + c == -a) {
+                        rs.add(Arrays.asList(a, b, c));
+
+                        while (left < right && b == nums[left]) {
+                            left++;
+                        }
+                        while (left < right && c == nums[right]) {
+                            right--;
+                        }
+                    } else if (b + c > -a) {
+                        right--;
+                    } else {
+                        left++;
+                    }
+                }
             }
         }
-
-        return result;
-    }
-
-    public void findRestTwo(int[] nums, int first) {
-        int left = first + 1;
-        int right = nums.length - 1;
-
-        while (left < right) {
-
-            if (nums[left] + nums[right] == -nums[first]) {
-                result.add(Arrays.asList(nums[first], nums[left++], nums[right--]));
-
-                while (left < nums.length - 1 && nums[left] == nums[left - 1]) {
-                    left++;
-                }
-
-                while (right > first && nums[right] == nums[right + 1]) {
-                    right--;
-                }
-
-            } else if (nums[left] + nums[right] < -nums[first]) {
-                left++;
-            } else {
-                right--;
-            }
-        }
+        return rs;
     }
 }
