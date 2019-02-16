@@ -11,7 +11,6 @@ public class Solution380 {
          */
         public RandomizedSet() {
             this.random = new Random();
-            this.random.setSeed(new Date().getTime());
             this.map = new HashMap<>();
             this.keyList = new ArrayList<>();
         }
@@ -32,18 +31,18 @@ public class Solution380 {
          * Removes a value from the set. Returns true if the set contained the specified element.
          */
         public boolean remove(int val) {
-            if (!map.containsKey(val)) {
-                return false;
-            }
-            final int idx = map.get(val);
-            if (idx < keyList.size() - 1) {
-                final int lastVal = keyList.get(keyList.size() - 1);
+            if (map.containsKey(val)) {
+                int idx = map.get(val);
+                int lastVal = keyList.get(keyList.size() - 1);
+
                 map.put(lastVal, idx);
                 keyList.set(idx, lastVal);
+
+                map.remove(val);
+                keyList.remove(keyList.size() - 1);
+                return true;
             }
-            map.remove(val);
-            keyList.remove(keyList.size() - 1);
-            return true;
+            return false;
         }
 
         /**
