@@ -6,20 +6,15 @@ public class Solution202 {
         Set<Integer> set = new HashSet<>();
 
         while (n != 1) {
-            int v = n;
-            n = 0;
-
-            while (v != 0) {
-                int lastDigit = v % 10;
-                n += (lastDigit * lastDigit);
-                v /= 10;
-            }
-
             if (!set.add(n)) {
                 return false;
             }
+            String s = String.valueOf(n);
+            n = 0;
+            for (char c : s.toCharArray()) {
+                n += (c - '0') * (c - '0');
+            }
         }
-
         return true;
     }
 }
