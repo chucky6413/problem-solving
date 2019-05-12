@@ -1,25 +1,15 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Solution98 {
     public boolean isValidBST(TreeNode root) {
-        Map<String, Long> holder = new HashMap<>();
-        holder.put("lastValue", Long.MIN_VALUE);
-        return inorder(root, holder);
+        return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
 
-    private boolean inorder(TreeNode node, Map<String, Long> holder) {
-        if (node == null) {
+    private boolean helper(TreeNode root, long min, long max) {
+        if (root == null) {
             return true;
         }
-        return inorder(node.left, holder) && helper(node, holder) && inorder(node.right, holder);
-    }
-
-    private boolean helper(TreeNode node, Map<String, Long> holder) {
-        if (node.val <= holder.get("lastValue")) {
+        if (root.val <= min || root.val >= max) {
             return false;
         }
-        holder.put("lastValue", (long) node.val);
-        return true;
+        return helper(root.left, min, root.val) && helper(root.right, root.val, max);
     }
 }
