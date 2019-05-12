@@ -1,12 +1,8 @@
 public class Solution104 {
     public int maxDepth(TreeNode root) {
-        return dfs(root, 0);
-    }
-
-    private int dfs(TreeNode node, int depth) {
-        if (node == null) {
-            return depth;
+        if (root == null) {
+            return 0;
         }
-        return Math.max(dfs(node.left, depth + 1), dfs(node.right, depth + 1));
+        return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
     }
 }
