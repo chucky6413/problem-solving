@@ -5,32 +5,20 @@ import java.util.List;
 
 public class Solution107 {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        List<List<Integer>> result = new ArrayList<>();
-        preorder(root, 0, result);
-        return getReverseList(result);
+        List<List<Integer>> list = new ArrayList<>();
+        makeList(list, root, 0);
+        return list;
     }
 
-    private List<List<Integer>> getReverseList(List<List<Integer>> target) {
-        List<List<Integer>> reverse = new ArrayList<>();
-
-        int size = target.size();
-        for (int i = 0; i < size; i++) {
-            reverse.add(target.get(size - 1 - i));
-        }
-        return reverse;
-    }
-
-    private void preorder(TreeNode node, int depth, List<List<Integer>> result) {
+    private void makeList(List<List<Integer>> list, TreeNode node, int level) {
         if (node == null) {
             return;
         }
-
-        if (result.size() <= depth) {
-            result.add(new ArrayList<Integer>());
+        if (level >= list.size()) {
+            list.add(0, new ArrayList<>());
         }
-
-        result.get(depth).add(node.val);
-        preorder(node.left, depth + 1, result);
-        preorder(node.right, depth + 1, result);
+        makeList(list, node.left, level + 1);
+        makeList(list, node.right, level + 1);
+        list.get(list.size() - 1 - level).add(node.val);
     }
 }
