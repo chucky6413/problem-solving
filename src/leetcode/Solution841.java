@@ -21,6 +21,6 @@ public class Solution841 {
             }
         }
 
-        return c == rooms.size() ? true : false;
+        return c == rooms.size();
     }
 }
