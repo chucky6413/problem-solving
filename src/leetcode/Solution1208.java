@@ -2,25 +2,23 @@ package leetcode;
 
 public class Solution1208 {
     public int equalSubstring(String s, String t, int maxCost) {
-        int[] cost = new int[s.length()];
+        int curCost = 0;
+        int maxLength = 0;
+        int l = 0;
+        for (int r = 0; r < s.length(); r++) {
+            int cost = Math.abs(s.charAt(r) - t.charAt(r));
 
-        for (int i = 0; i < s.length(); i++) {
-            cost[i] = Math.abs(s.charAt(i) - t.charAt(i));
-        }
-
-        int startIdx = 0;
-        int maximumLen = 0;
-        int remainCost = maxCost;
-        for (int i = 0; i < cost.length; i++) {
-            remainCost -= cost[i];
-            while (remainCost < 0) {
-                remainCost += cost[startIdx];
-                startIdx += 1;
+            while (l <= r && curCost + cost > maxCost) {
+                curCost -= Math.abs(s.charAt(l) - t.charAt(l));
+                l++;
             }
 
-            maximumLen = Math.max(i - startIdx + 1, maximumLen);
+            if (curCost + cost <= maxCost) {
+                curCost += cost;
+                maxLength = Math.max(r - l + 1, maxLength);
+            }
         }
 
-        return maximumLen;
+        return maxLength;
     }
 }
