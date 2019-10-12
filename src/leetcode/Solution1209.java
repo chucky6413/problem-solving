@@ -1,22 +1,39 @@
 package leetcode;
 
-public class Solution1209 {
-    public String removeDuplicates(String s, int k) {
-        int idx = 0;
-        while (idx < s.length()) {
-            int dupCnt = 0;
-            char c = s.charAt(idx);
+import java.util.Stack;
 
-            while (idx < s.length() && s.charAt(idx) == c && dupCnt < k) {
-                idx++;
-                dupCnt++;
+public class Solution1209 {
+    class Pair {
+        char c;
+        int cnt;
+
+        public Pair(char c, int cnt) {
+            this.c = c;
+            this.cnt = cnt;
+        }
+    }
+
+    public String removeDuplicates(String s, int k) {
+        Stack<Pair> stack = new Stack<>();
+
+        for (char c : s.toCharArray()) {
+            if (!stack.isEmpty() && stack.peek().c == c) {
+                stack.push(new Pair(c, stack.peek().cnt + 1));
+            } else {
+                stack.push(new Pair(c, 1));
             }
 
-            if (dupCnt == k) {
-                return removeDuplicates(s.substring(0, idx - k) + s.substring(idx), k);
+            if (stack.peek().cnt == k) {
+                for (int i = 0; i < k; i++) {
+                    stack.pop();
+                }
             }
         }
 
-        return s;
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.append(stack.pop().c);
+        }
+        return sb.reverse().toString();
     }
 }
