@@ -13,7 +13,7 @@ public class Solution1239 {
             boolean dup = false;
             for (char c : s.toCharArray()) {
                 int b = 1 << (c - 'a');
-                dup = dup ? dup : (bits & b) > 0;
+                dup = dup || (bits & b) > 0;
                 bits |= b;
             }
             if (dup) {
