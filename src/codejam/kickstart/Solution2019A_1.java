@@ -14,8 +14,8 @@ public class Solution2019A_1 {
 	private static final String NEW_LINE = "\n";
 
 	public static void main(String[] args) {
-		int t = sc.nextInt();
-		for (int i = 1; i <= t; i++) {
+		int T = sc.nextInt();
+		for (int i = 1; i <= T; i++) {
 			int N = sc.nextInt();
 			int P = sc.nextInt();
 			int[] S = new int[N];

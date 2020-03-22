@@ -11,8 +11,8 @@ public class Solution2019C_2 {
 	private static final StringBuilder rs = new StringBuilder();
 
 	public static void main(String[] args) throws IOException {
-		int t = Integer.parseInt(br.readLine());
-		for (int i = 1; i <= t; i++) {
+		int T = Integer.parseInt(br.readLine());
+		for (int i = 1; i <= T; i++) {
 			rs.append(String.format("Case #%d: ", i))
 				.append(solve())
 				.append(NEW_LINE);

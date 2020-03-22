@@ -19,8 +19,8 @@ public class KickStartTemplate {
 		final Scanner sc = new Scanner(
 			new BufferedReader(new FileReader(new File(".").getAbsolutePath() + "/src/codejam/input.txt")));
 
-		int t = sc.nextInt();
-		for (int i = 1; i <= t; i++) {
+		int T = sc.nextInt();
+		for (int i = 1; i <= T; i++) {
 			rs.append(String.format("Case #%d: ", i))
 				.append(solve())
 				.append(NEW_LINE);
