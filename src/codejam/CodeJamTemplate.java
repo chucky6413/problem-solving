@@ -1,4 +1,4 @@
-package codejam.kickstart;
+package codejam;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class KickStartTemplate {
+public class CodeJamTemplate {
 	//	private static final Scanner sc = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
 	private static final PrintWriter w = new PrintWriter(System.out);
 	private static final StringBuilder rs = new StringBuilder();
