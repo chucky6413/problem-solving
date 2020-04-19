@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Solution2020H_3 {
+public class Solution2019H_3 {
 	private static final Scanner sc = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
 	private static final PrintWriter w = new PrintWriter(System.out);
 	private static final StringBuilder rs = new StringBuilder();
